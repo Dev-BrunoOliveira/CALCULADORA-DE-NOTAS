@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+    </div>
+    <div class="container">
+        <h2>Calculadora de Notas</h2>
+        <p>Insira suas notas:</p>
+        <div>
+            <label>AO1:</label>
+            <input type="number" id="nota1" min="0" max="1" step="0.1">
+            <input type="number" id="nota2" min="0" max="1" step="0.1">
+            <input type="number" id="nota3" min="0" max="1" step="0.1">
+            <input type="number" id="nota4" min="0" max="1" step="0.1">
+        </div>
+        <div>
+            <label>AO2:</label>
+            <input type="number" id="nota5" min="0" max="6" step="0.1">
+        </div>
+        <button onclick="calcularNota()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
