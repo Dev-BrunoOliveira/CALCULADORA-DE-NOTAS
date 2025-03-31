@@ -16,6 +16,8 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    max-width: 90%; 
+    box-sizing: border-box; 
 }
 
 input {
@@ -24,6 +26,7 @@ input {
     margin: 5px;
     text-align: center;
 }
+
 button {
     background-color: #ff6600;
     color: white;
@@ -33,13 +36,16 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #cc5200;
 }
+
 #resultado {
     font-weight: bold;
     margin-top: 10px;
 }
+
 .theme-toggle {
     position: absolute;
     top: 20px;
@@ -56,4 +62,40 @@ button:hover {
 .dark-mode .container {
     background-color: #333;
     color: white;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 50%; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        justify-content: center;
+        align-self: center; 
+    }
+
+    .container {
+        padding: 70px; 
+    }
+
+    .theme-toggle {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 0px; 
+    }
+
+    input {
+        width: 70%; 
+    }
+
+    button {
+        padding: 10px; 
+    }
 }
